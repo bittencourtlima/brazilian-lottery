@@ -3,7 +3,7 @@ package br.com.bittencourt.lottery.gameslist.di
 import br.com.bittencourt.lottery.gameslist.presentation.GamesListActivity
 import dagger.Subcomponent
 
-@Subcomponent
+@Subcomponent(modules = [GamesListModule::class])
 interface GamesListComponent {
     fun inject(activity: GamesListActivity)
 
