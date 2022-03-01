@@ -2,6 +2,7 @@ package br.com.bittencourt.lottery.core.network.di
 
 import br.com.bittencourt.lottery.core.network.LoggingInterceptor
 import br.com.bittencourt.lottery.core.network.NetworkConstants
+import br.com.bittencourt.lottery.core.network.TokenInterceptor
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -21,9 +22,10 @@ object NetworkModule {
             .build()
 
     @Provides
-    fun provideOkHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient =
+    fun provideOkHttpClient(loggingInterceptor: HttpLoggingInterceptor, tokenInterceptor: TokenInterceptor): OkHttpClient =
         OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
+            .addInterceptor(tokenInterceptor)
             .build()
 
     @Provides
