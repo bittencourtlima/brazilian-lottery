@@ -1,8 +1,8 @@
-package br.com.bittencourt.lottery.core.network.di
+package br.com.bittencourt.lottery.commons.network.di
 
-import br.com.bittencourt.lottery.core.network.LoggingInterceptor
-import br.com.bittencourt.lottery.core.network.NetworkConstants
-import br.com.bittencourt.lottery.core.network.TokenInterceptor
+import br.com.bittencourt.lottery.commons.network.LoggingInterceptor
+import br.com.bittencourt.lottery.commons.network.NetworkConstants
+import br.com.bittencourt.lottery.commons.network.TokenInterceptor
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

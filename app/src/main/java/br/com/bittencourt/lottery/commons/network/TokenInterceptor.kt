@@ -1,4 +1,4 @@
-package br.com.bittencourt.lottery.core.network
+package br.com.bittencourt.lottery.commons.network
 
 import okhttp3.Interceptor
 import okhttp3.Response

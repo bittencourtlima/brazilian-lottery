@@ -1,4 +1,4 @@
-package br.com.bittencourt.lottery.core.network
+package br.com.bittencourt.lottery.commons.network
 
 import android.util.Log
 import okhttp3.logging.HttpLoggingInterceptor
